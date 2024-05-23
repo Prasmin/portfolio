@@ -9,8 +9,8 @@ import Image from "next/image";
 import profilePic from "../public/prasmin_profile.png";
 
 const navigation = [
-  { name: "Dashboard", href: "/", current: true },
-  { name: "Team", href: "/team", current: false },
+  { name: "Home", href: "/", current: true },
+
   { name: "Projects", href: "/project", current: false },
   { name: "Uses", href: "/use", current: false },
   { name: "Contact", href: "/contact", current: false },

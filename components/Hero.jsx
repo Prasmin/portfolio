@@ -55,7 +55,7 @@ export default function Hero() {
       </div>
 
       <div className="  flex justify-center ">
-        <Image src={me} alt="prasmin" width={500} height={500} />
+        <Image src={me} alt="prasmin" width={500} height={500} priority />
       </div>
     </div>
   );
