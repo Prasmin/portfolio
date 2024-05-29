@@ -47,7 +47,7 @@ const Navbar = () => {
 
   return (
     <header className=" flex justify-around pt-3 lg:justify-evenly items-center">
-      <div className="  ">
+      <div>
         <Link href="/">
           <span className="sr-only">Prashmin Gurung</span>
           <Image

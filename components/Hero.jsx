@@ -15,7 +15,7 @@ export default function Hero() {
     <div className="  flex flex-col sm:flex-row  gap-8 p-4">
       <div className=" flex-1 text-balance pl-12 lg:py-32   ">
         <article>
-          <h2 className=" text-3xl font-bold tracking-normal leading-normal sm:leading-normal  sm:text-4xl ">
+          <h2 className=" text-2xl font-bold tracking-normal leading-normal sm:leading-normal  sm:text-4xl ">
             Fullstack Developer, Balanced Life Coder, Multicultural
             Collaborator.
           </h2>

@@ -1,38 +1,51 @@
 import React from "react";
+import {
+  DiJsBadge,
+  DiReact,
+  DiNodejs,
+  DiGithubBadge,
+  DiMongodb,
+} from "react-icons/di";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiNextdotjs } from "react-icons/si";
 
 const SkillsData = [
   {
     id: 0,
-    icon: <i className="devicon-javascript-plain colored"></i>,
+    icon: <DiJsBadge style={{ color: "#FACC15" }} />,
   },
   {
     id: 1,
-    icon: <i className="devicon-react-original colored"></i>,
+    icon: <DiReact style={{ color: "#1E3A8A" }} />, // Adjusted to Tailwind CSS color
   },
   {
     id: 2,
-
-    icon: <i class="devicon-tailwindcss-original colored"></i>,
+    icon: <BiLogoTailwindCss style={{ color: "#1D4ED8" }} />, // Adjusted to Tailwind CSS color
   },
   {
     id: 3,
-    icon: <i className="devicon-nextjs-plain colored"></i>,
+    icon: <SiNextdotjs />,
   },
   {
     id: 4,
-    icon: <i className="devicon-nodejs-plain-wordmark colored"></i>,
+    icon: <DiNodejs style={{ color: "#16A34A" }} />,
   },
   {
     id: 5,
-    icon: <i className="devicon-git-plain-wordmark colored"></i>,
+    icon: <DiGithubBadge />,
   },
   {
     id: 6,
-    icon: <i className="devicon-mongodb-plain-wordmark colored"></i>,
+    icon: <DiMongodb style={{ color: "#064E3B" }} />, // Adjusted to Tailwind CSS color
   },
   {
     id: 7,
-    icon: <i className="devicon-express-original-wordmark colored"></i>,
+    icon: (
+      <i
+        className="devicon-express-original-wordmark colored font-bold"
+        style={{ color: "#000000" }}
+      ></i>
+    ),
   },
 ];
 
