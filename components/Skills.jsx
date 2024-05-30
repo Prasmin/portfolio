@@ -4,7 +4,7 @@ import skillsData from "../lib/data";
 export default function Skills() {
   return (
     <section>
-      <div className=" gap-8 items-center py-8 px-4 mx-auto  w-full h-screen  xl:gap-16 md:grid md:grid-cols-2  lg:px-6   ">
+      <div className=" gap-8 items-center py-8 px-4 mx-auto  w-full md:h-screen  xl:gap-16 md:grid md:grid-cols-2  lg:px-6   ">
         <div className=" grid sm:grid-cols-4 grid-cols-3 gap-12 mt-7 ">
           {skillsData.map((item) => (
             <div key={item.id} className=" sm:text-7xl text-4xl">
@@ -13,7 +13,7 @@ export default function Skills() {
           ))}
         </div>
         <article>
-          <h2 className="sm:text-4xl text-2xl font-bold text-center -mt-4   ">
+          <h2 className="sm:text-4xl text-2xl font-bold text-center mt-4   ">
             What I do
           </h2>
 
