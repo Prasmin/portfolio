@@ -46,8 +46,8 @@ const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   return (
-    <header className=" flex justify-around pt-3 lg:justify-evenly items-center">
-      <div>
+    <header className=" flex justify-around pt-3 lg:justify-center  items-center">
+      <div className="lg:basis-1/2 lg:max-w-32">
         <Link href="/">
           <span className="sr-only">Prashmin Gurung</span>
           <Image

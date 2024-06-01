@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -6,11 +8,15 @@ import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
+import { AiFillApi } from "react-icons/ai";
 
 import me from "../public/Me.jpg";
+import Modal from "./modal";
 // import CV from "../public/Prashmin-gurung_CV.pdf";
 
 export default function Hero() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="  flex flex-col sm:flex-row  gap-8 p-4">
       <div className=" flex-1 text-balance pl-12 lg:py-32   ">
@@ -26,12 +32,25 @@ export default function Hero() {
         </article>
 
         <div className="flex flex-col p-4 sm:flex-row items-center  text-lg font-medium">
-          <Link
-            href="#contact"
-            className="bg-gray-900 hover:bg-gray-600   text-white px-7 py-3 flex items-center gap-2 rounded-full  "
+          <button
+            className="bg-gray-900 hover:bg-gray-600   text-white px-7 py-3 flex items-center gap-2 rounded-full"
+            onClick={() => setOpen(true)}
           >
             Contact me here <BsArrowRight />
-          </Link>
+          </button>
+
+          {/* ------Modal--------- */}
+          <Modal open={open} onClose={() => setOpen(false)}>
+            <div className="mx-auto my-4 w-48">
+              <h3 className="text-lg font-black text-gray-800">
+                Contact details.
+              </h3>
+              <p className="text-sm text-gray-500 my-2">
+                prashmingrg@gmail.com
+              </p>
+              <p className="text-sm text-gray-500">0426862304</p>
+            </div>
+          </Modal>
           <a
             className="bg-white px-7 py-3 hover:bg-gray-600/30  flex items-center gap-2 rounded-full"
             href="/CV.pdf"
